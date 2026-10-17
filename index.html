@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating Systems</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar p-0">
+            <div class="w-100" style="background-color: #13152A;">
+                <div class="navbar-brand d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img src="./images/logo.png" alt="Logo" width="60" height="48" class="d-inline-block rounded-4 ms-5 ">
+                        <div class="fs-2 ms-2 p-2 text-white">Operating Systems</div>
+                    </div>
+                    <div class="me-5 text-end">
+                        <p class="fs-4 text-white m-0">"All Operating Systems suck but Linux sucks less."</p>
+                        <footer class="blockquote-footer m-0 text-white">
+                            By <cite title="Source Title">Linus Torvalds</cite>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4 mainBody">
+        <div class="alert alert-info rounded-4 shadow-sm">
+            <h5>Welcome to Operating Systems Guide</h5>
+            <p>This is a simple guide for understanding Operating Systems. Use the navigation tabs above to explore different topics.</p>
+        </div>
+
+        <div class="card-container d-grid gap-4 mt-4">
+            <div class="card shadow-sm h-100">
+                <img src="./images/cpu-scheduling.webp" class="card-img-top" alt="CPU Scheduling Illustration">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">CPU Scheduling</h5>
+                    <p class="card-text">Learn about different CPU scheduling algorithms and how they manage process execution.</p>
+                    <button class="btn btn-primary mt-auto" onclick="window.location.href='./Pages/SchedulingPage.html'">Explore</button>
+                </div>
+            </div>
+
+            <div class="card shadow-sm h-100">
+                <img src="./images/paging.webp" class="card-img-top" style="max-height: 350px;" alt="Paging Illustration">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">Paging & Page Replacement</h5>
+                    <p class="card-text">Visualize paging and understand how different page replacement algorithms work.</p>
+                    <button class="btn btn-primary mt-auto" onclick="window.location.href='./Pages/PagingPage.html'">Explore</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer sticky-bottom mt-5 py-2" style="background-color: #13152A; color: white; text-align: right;">
+        <div class="me-5 fs-5">A Simple Guide For Operating Systems</div>
+    </footer>
+</body>
+</html>
